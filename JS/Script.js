@@ -17,6 +17,8 @@ function clic() {
     afficherScore();
 }
 
+
+
 function prix() {
     return 20 * nbMultiplicateur * nbMultiplicateur;
 }
@@ -28,11 +30,25 @@ function acheterMultiplicateur() {
         afficherNbMultiplicateur();
         afficherScore();
     } else {
-        alert("Votre score est insuffisant !");
+        alert("Tu n'as pas assez lancé mes papattes !");
     }
 }
+
+
+function autoClic() {
+   score = score + 1;
+  afficherScore();
+    setTimeout(autoClic, 3000);
+}
+
+setTimeout(autoClic);
+
+
+
+
 
 $bouton.onclick = clic;
 $multiplicateur.onclick = acheterMultiplicateur;
 afficherScore();
 afficherNbMultiplicateur();
+setTimeout(autoCLick);

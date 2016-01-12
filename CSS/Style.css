@@ -1,5 +1,66 @@
 body {
-color:white;
-background-color:white;
-background-image:url(Images/vert.jpg);
+background-image:url(/Images/vert.jpg);
+background-color:transparent;
+}
+
+#bouton {
+    background-color:transparent;
+    border-style:none;
+}
+
+img {
+width:400px;
+height:400px;
+margin-top: 0px;
+margin-right: 0px;
+position: relative;
+left: 500px;
+bottom: 20px;
+}
+
+#score {
+    color:#ffffff;
+    font-size:25px;
+    font-family:cursive;
+    text-align:center;
+    background-color:black;
+    border-radius:30px;
+    
+}
+
+#multiplicateur {
+    color:white;
+    background-color:black;
+    font-family:cursive;
+    border-radius:30px;
+    width:300px;
+    height:30px;
+    text-align:center;
+    margin-bottom:0px;
+  
+}
+
+h1 {
+    color:white;
+    font-family:impact;
+    font-size:70px;
+    position: relative;
+    left: 150px;
+    top: 120px;
+     text-shadow: 10px 10px 20px #000;
+      color: #fff;
+    
+    
+}
+    
+h2 {
+    color:black;
+    font-family:cursive;
+    text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff -1px -1px;
+    font-size:40px;
+    font-style:italic;
+    position: relative;
+    left: 160px;
+    top: 50px;
+    
 }
