@@ -35,10 +35,21 @@ function acheterMultiplicateur() {
 }
 
 
+
 function autoClic() {
-   score = score + 1;
+    if (score >= 200){
+        score = score + 1 ;
+        setTimeout(autoClic, 3000);
+
+    afficherScore();
+
+
+    }else {
+
   afficherScore();
-    setTimeout(autoClic, 3000);
+  setTimeout(autoClic, 3000);
+    }
+
 }
 
 setTimeout(autoClic);
@@ -51,4 +62,7 @@ $bouton.onclick = clic;
 $multiplicateur.onclick = acheterMultiplicateur;
 afficherScore();
 afficherNbMultiplicateur();
-setTimeout(autoCLick);
+
+
+
+
